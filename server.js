@@ -10,15 +10,26 @@ var port = process.env.PORT || 3000;
 app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 
+// serve static files from public/
+app.use(express.static(path.join(__dirname, "public")));
 
-
-var express = require("express");
-var app = express();
+// route root path to index page, and give handlebars the appropriate page
+// title and chinese data to render
 app.get("/", function(req, res) {
-  res.send("Hello world!");
-});
-app.listen(3000, function() {
-  console.log("Example app listening on port 3000!");
+  res.render("homePage", {
+    title: "Chinese Learning App",
+    chineseData: chineseData
+  });
 });
 
+// return a 404 and render the 404 page for any other route
+app.get("*", function(req, res) {
+  res.status(404).render("404page", { title: "Page not found" });
+});
+
+// listen on the specified port
+
+app.listen(port, function() {
+  console.log("== Listening on port", port);
+});
 
