@@ -1,0 +1,53 @@
+body {
+  background: #efefef;
+}
+
+// top container
+.topContainer {
+  top: 0%;
+  bottom: 10%;
+}
+.topLeftPanel {
+  height: inherit;
+}
+.topCenterPanel {
+  height: inherit;
+}
+#chineseLogo {
+  height: inherit;
+  left: 40%;
+  right: 60%;
+}
+.topRightPanel {
+  height: inherit;
+}
+#focusModeButton {
+  height: inherit;
+  left: 28%;
+  right: 38%;
+}
+#nightModeButton {
+  height: inherit;
+  left: 61%;
+  right: 71%;
+}
+
+// left container
+.leftContainer {
+  //
+}
+
+// center container
+.centerContainer {
+  //
+}
+
+// right container
+.rightContainer {
+  //
+}
+
+// bottom container
+.bottomContainer {
+  //
+}
