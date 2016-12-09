@@ -1,0 +1,19 @@
+{
+  "name": "chineseapp",
+  "version": "1.0.0",
+  "description": "A simple web application to learn Chinese characters.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OSU-CS290-F16/final-project-chinese-learning-website.git"
+  },
+  "author": "loven",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OSU-CS290-F16/final-project-chinese-learning-website/issues"
+  },
+  "homepage": "https://github.com/OSU-CS290-F16/final-project-chinese-learning-website#readme"
+}
