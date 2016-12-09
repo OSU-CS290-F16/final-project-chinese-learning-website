@@ -1,0 +1,93 @@
+/* stylesDesktop.css: 801px or higher width */
+
+body {
+  background: #efefef;      /* light gray background */
+}
+
+// top container
+.topContainer {
+  top: 0%;
+  left: 0%;
+  right: 100%;
+  bottom: 10%;
+  background-color: #ffffff;
+}
+  .topLeftPanel {
+    height: inherit;
+  }
+  .topCenterPanel {
+    height: inherit;
+  }
+  #chineseLogo {
+    height: inherit;
+    left: 40%;
+    right: 60%;
+  }
+  .topRightPanel {
+    height: inherit;
+  }
+  #focusModeButton {
+    height: inherit;
+    left: 28%;
+    right: 38%;
+  }
+  #nightModeButton {
+    height: inherit;
+    left: 61%;
+    right: 71%;
+  }
+
+// left container
+.leftContainer {
+  top: 10%;
+  left: 0%;
+  right: 20%;
+  bottom: 80%;
+  border: 3% solid rgba(0,0,0,0);   /* transparent border */
+  background-color: #ffffff;
+}
+  #set1Logo {
+    top: 20%;
+    left: 20%;
+    right: 80%;
+    bottom: 30%;
+  }
+  #set2Logo {
+    top: 45%;
+    left: 20%;
+    right: 80%;
+    bottom: 55%;
+  }
+  #set3Logo {
+    top: 70%;
+    left: 20%;
+    right: 80%;
+    bottom: 80%;
+  }
+
+// center container
+.centerContainer {
+  top: 10%;
+  left: 20%;
+  right: 100%;
+  bottom: 80%;
+  border: 3% solid rgba(0,0,0,0);
+  background-color: #ffffff;
+}
+
+// bottom container
+.bottomContainer {
+  top: 80%;
+  left: 0%;
+  right: 100%;
+  bottom: 100%;
+  border: 3% solid rgba(0,0,0,0);
+  background-color: #ffffff;
+}
+  .characterHistory {
+    top: 10%;
+    left: 10%;
+    right: 90%;
+    bottom: 90%;
+  }
+
