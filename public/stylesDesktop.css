@@ -19,7 +19,8 @@ body {
     height: inherit;
   }
   #chineseLogo {
-    height: inherit;
+    width: 10%;
+    height: 10%;
     left: 40%;
     right: 60%;
   }
@@ -27,12 +28,14 @@ body {
     height: inherit;
   }
   #focusModeButton {
-    height: inherit;
+    width: 10%;
+    height: 10%;
     left: 28%;
     right: 38%;
   }
   #nightModeButton {
-    height: inherit;
+    width: 10%;
+    height: 10%;
     left: 61%;
     right: 71%;
   }
@@ -47,21 +50,21 @@ body {
   background-color: #ffffff;
   visibility: visible;
 }
-  #set1Logo {
+  #set1Button {
     top: 20%;
     left: 20%;
     right: 80%;
     bottom: 30%;
     visibility: inherit;
   }
-  #set2Logo {
+  #set2Button {
     top: 45%;
     left: 20%;
     right: 80%;
     bottom: 55%;
     visibility: inherit;
   }
-  #set3Logo {
+  #set3Button {
     top: 70%;
     left: 20%;
     right: 80%;

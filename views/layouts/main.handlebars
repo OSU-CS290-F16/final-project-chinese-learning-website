@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>{{title}}</title>
+  <title>{{{title}}}</title>
   <meta name="robots" content="noindex,nofollow">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" media="(max-width: 800px)" href="/stylesMobile.css">
@@ -11,29 +11,45 @@
 </head>
 <body>
 
+  {{!-- top container --}}
   <div class="topContainer" id="topContainer">
     <div class="topLeftPanel"></div>
     <div class="topCenterPanel">
       <img id="chineseLogo" alt="Chinese logo" src="chineselogo.png">
     </div>
     <div class="topRightPanel">
-      <input type="image" src="focusmodelogo.png" id="focusModeButton">
-      <input type="image" src="nightmodelogo.png" id="nightModeButton">
+      <input type="image" src="focusmodebutton.png" id="focusModeButton">
+      <input type="image" src="nightmodebutton.png" id="nightModeButton">
     </div>
   </div>
   
+  {{!-- left container --}}
   <div class="leftContainer" id="leftContainer">
     <input type="image" src="set1button.png" id="set1Button">
     <input type="image" src="set2button.png" id="set2Button">
     <input type="image" src="set3button.png" id="set3Button">
   </div>
   
+  {{!-- center container --}}
   <div class="centerContainer" id="centerContainer">
     <input type="image" src="backbutton.png" id="backButton">
-    {{!-- TODO: hero character here, need handlebars here --}}
+{{!--    
+    <div id="heroBox">
+      <div id="heroCharacterBox">
+        <p>{{characters.currentSet.currentChar}}</p>
+      </div>
+      <div id="heroPronounceBox">
+        <p>{{characters.currentSet.currentPron}}</p>
+      </div>
+      <div id="heroMeaningBox">
+        <p>{{characters.currentSet.currentMean}}</p>
+      </div>
+    </div>
+--}}
     <input type="image" src="forwardbutton.png" id="forwardButton">
   </div>
-  
+
+  {{!-- bottom container --}}
   <div class="bottomContainer" id="bottomContainer">
     <div class="characterHistory">
       {{!-- TODO: character history here, need handlebars here --}}
