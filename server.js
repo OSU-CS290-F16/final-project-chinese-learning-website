@@ -28,7 +28,6 @@ app.get("*", function(req, res) {
 });
 
 // listen on the specified port
-
 app.listen(port, function() {
   console.log("== Listening on port", port);
 });
