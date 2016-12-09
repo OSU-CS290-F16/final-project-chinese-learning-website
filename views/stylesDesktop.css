@@ -1,7 +1,7 @@
 /* stylesDesktop.css: 801px or higher width */
 
 body {
-  background: #efefef;      /* light gray background */
+  background-color: #efefef;      /* light gray background */
 }
 
 // top container
@@ -45,24 +45,28 @@ body {
   bottom: 80%;
   border: 3% solid rgba(0,0,0,0);   /* transparent border */
   background-color: #ffffff;
+  visibility: visible;
 }
   #set1Logo {
     top: 20%;
     left: 20%;
     right: 80%;
     bottom: 30%;
+    visibility: inherit;
   }
   #set2Logo {
     top: 45%;
     left: 20%;
     right: 80%;
     bottom: 55%;
+    visibility: inherit;
   }
   #set3Logo {
     top: 70%;
     left: 20%;
     right: 80%;
     bottom: 80%;
+    visibility: inherit;
   }
 
 // center container
@@ -83,11 +87,14 @@ body {
   bottom: 100%;
   border: 3% solid rgba(0,0,0,0);
   background-color: #ffffff;
+  visibility: visible;
 }
   .characterHistory {
     top: 10%;
     left: 10%;
     right: 90%;
     bottom: 90%;
+    overflow: auto;
+    visibility: inherit;
   }
 

@@ -19,27 +19,33 @@
   <div class="topContainer">
     <div class="topLeftPanel"></div>
     <div class="topCenterPanel">
-      <img id="chineseLogo" alt="Chinese logo" src="chineseLogo.png">
+      <img id="chineseLogo" alt="Chinese logo" src="chineselogo.png">
     </div>
     <div class="topRightPanel">
       {{!-- contains toggle buttons for night mode and focus mode --}}
-      <input type="image" src="focusModeLogo.png" id="focusModeButton">
-      <input type="image" src="nightModeLogo.png" id="nightModeButton">
+      <input type="image" src="focusmodelogo.png" id="focusModeButton">
+      <input type="image" src="nightmodelogo.png" id="nightModeButton">
     </div>
   </div>
   
   <div class="leftContainer">
-    <input type="image" src="set1Logo.png" id="set1Logo">
-    <input type="image" src="set2Logo.png" id="set2Logo">
-    <input type="image" src="set3Logo.png" id="set3Logo">
+    <input type="image" src="set1logo.png" id="set1Logo">
+    <input type="image" src="set2logo.png" id="set2Logo">
+    <input type="image" src="set3logo.png" id="set3Logo">
   </div>
   
   <div class="centerContainer">
-    <div class="
+    <input type="image" src="leftarrow.png" id="leftArrow">
+    {{!-- TODO: hero character here, need handlebars here --}}
+    <input type="image" src="rightarrow.png" id="rightArrow">
   </div>
   
   <div class="bottomContainer">
-    <div class="characterHistory"></div>
+    <div class="characterHistory">
+      {{!-- TODO: character history here, need handlebars here --}}
+    </div>
   </div>
   
 </body>
+{{!-- TODO: add client-side static interactivity with client.js --}}
+{{!-- TODO: focus mode toggles visibility: hidden and body color black --}}
