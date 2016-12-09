@@ -3,7 +3,7 @@ var express = require("express");
 var exphbs = require("express-handlebars");
 
 var app = express();
-var chineseData = require("./chineseData");
+var characters = require("./characters");
 var port = process.env.PORT || 3000;
 
 // use handlebars as the view engine for the app
@@ -16,9 +16,9 @@ app.use(express.static(path.join(__dirname, "public")));
 // route root path to index page, and give handlebars the appropriate page
 // title and chinese data to render
 app.get("/", function(req, res) {
-  res.render("homePage", {
+  res.render("main", {
     title: "Chinese Learning App",
-    chineseData: chineseData
+    characters: characters
   });
 });
 

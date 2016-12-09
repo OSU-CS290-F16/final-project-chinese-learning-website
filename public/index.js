@@ -8,6 +8,11 @@ window.addEventListener("DOMContentLoaded", function(event) {
   var lc = document.getElementById("leftContainer");
   var cc = document.getElementById("centerContainer");
   var bc = document.getElementById("bottomContainer");
+  var s1b = document.getElementById("set1Button");
+  var s2b = document.getElementById("set2Button");
+  var s3b = document.getElementById("set3Button");
+  var bb = document.getElementById("backButton");
+  var fb = document.getElementById("forwardButton");
 
   // delegate an event listener to the focus mode button to toggle visibility
   // of the left and bottom panels
@@ -62,6 +67,7 @@ window.addEventListener("DOMContentLoaded", function(event) {
   });
 
   // add hover styling to make interface feel more interactive
+  // active hover color is turqoise: CadetBlue #5f9ea0
 
   // focus mode button (multiple possible previous states)
   fmb.addEventListener("mouseenter", function(e) {
@@ -99,33 +105,97 @@ window.addEventListener("DOMContentLoaded", function(event) {
       if (lc.style.visibility === "visible") {
         // case 1.1: night mode was inactive, focus mode was inactive
         nmb.style.border = "none";
+      } else {
+        // case 1.2: night mode was inactive, focus mode was active
+        nmb.style.border = "none";
       }
-      // case 1.2: night mode was inactive, focus mode was active
     } else {
       // case 2: night mode was active
-      // case 2.1: night mode was active, focus mode was inactive
-      // case 2.2: night mode was active, focus mode was active
+      if (lc.style.visibility === "visible") {
+        // case 2.1: night mode was active, focus mode was inactive
+        nmb.style.border = "3% solid #000000";
+      } else {
+        // case 2.2: night mode was active, focus mode was active
+        nmb.style.border = "3% solid #000000";
+      }
     }
-
+  });
 
   // character set 1 button (multiple possible previous states)
-  var s1b = document.getElementById("set1Button");
-
+  s1b.addEventListener("mouseenter", function(e) {
+    s1b.style.border = "3% solid #5f9ea0";
+  });
+  s1b.addEventListener("mouseleave", function(e) {
+    if (s2b.style.border === "none" && s3b.style.border === "none") {
+      // case 1: s1b was previously selected
+      if (b.style.backgroundColor === "#000000") {
+        // case 1.1: night mode is active
+        s1b.style.border = "3% solid #000000";
+      } else {
+        // case 1.2: night mode is not active
+        s1b.style.border = "3% solid #efefef";
+      }
+    } else {
+      // case 2: s1b was not previously selected
+      s1b.style.border = "none";
+    }
+  });
 
   // character set 2 button (multiple possible previous states)
-  var s2b = document.getElementById("set2Button");
-
+  s2b.addEventListener("mouseenter", function(e) {
+    s2b.style.border = "3% solid #5f9ea0";
+  });
+  s2b.addEventListener("mouseleave", function(e) {
+    if (s1b.style.border === "none" && s3b.style.border === "none") {
+      // case 1: s2b was previously selected
+      if (b.style.backgroundColor === "#000000") {
+        // case 1.1: night mode is active
+        s2b.style.border = "3% solid #000000";
+      } else {
+        // case 1.2: night mode is not active
+        s2b.style.border = "3% solid #efefef";
+      }
+    } else {
+      // case 2: s2b was not previously selected
+      s2b.style.border = "none";
+    }
+  });
 
   // character set 3 button (multiple possible previous states)
-  var s3b = document.getElementById("set3Button");
-
+  s3b.addEventListener("mouseenter", function(e) {
+    s3b.style.border = "3% solid #5f9ea0";
+  });
+  s3b.addEventListener("mouseleave", function(e) {
+    if (s1b.style.border === "none" && s2b.style.border === "none") {
+      // case 1: s3b was previously selected
+      if (b.style.backgroundColor === "#000000") {
+        // case 1.1: night mode is active
+        s3b.style.border = "3% solid #000000";
+      } else {
+        // case 1.2: night mode is not active
+        s3b.style.border = "3% solid #efefef";
+      }
+    } else {
+      // case 2: s3b was not previously selected
+      s3b.style.border = "none";
+    }
+  });
 
   // back button (one possible previous state)
-  var bb = document.getElementById("backButton");
-
+  bb.addEventListener("mouseenter", function(e) {
+    bb.style.border = "3% solid #5f9ea0";
+  });
+  bb.addEventListener("mouseleave", function(e) {
+    bb.style.border = "none";
+  });
 
   // forward button (one possible previous state)
-  var fb = document.getElementById("forwardButton");
+  fb.addEventListener("mouseenter", function(e) {
+    fb.style.border = "3% solid #5f9ea0";
+  });
+  fb.addEventListener("mouseleave", function(e) {
+    fb.style.border = "none";
+  });
   
 });
 
@@ -133,7 +203,6 @@ window.addEventListener("DOMContentLoaded", function(event) {
 
 
 
-  // TEMP: my turqoise color is: CadetBlue #5f9ea0
 
 
 
