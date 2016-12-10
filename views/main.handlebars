@@ -5,56 +5,62 @@
   <title>{{{title}}}</title>
   <meta name="robots" content="noindex,nofollow">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" media="(max-width: 800px)" href="/stylesMobile.css">
-  <link rel="stylesheet" media="(min-width: 801px)" href="/stylesDesktop.css">
+  <link rel="stylesheet" href="/styles.css">
   <script src="/index.js"></script>
 </head>
 <body>
+  <div id="chineseLogoBackground"></div>
+  <img id="chineseLogo" alt="Chinese logo" src="chineselogo.png">
 
-  {{!-- top container --}}
-  <div class="topContainer" id="topContainer">
-    <div class="topLeftPanel"></div>
-    <div class="topCenterPanel">
-      <img id="chineseLogo" alt="Chinese logo" src="chineselogo.png">
-    </div>
-    <div class="topRightPanel">
-      <input type="image" src="focusmodelogo.png" id="focusModeButton">
-      <input type="image" src="nightmodelogo.png" id="nightModeButton">
-    </div>
-  </div>
+  <div id="focusModeButtonBackground"></div>
+  <input type="image" src="focusmodebutton.png" id="focusModeButton">
   
-  {{!-- left container --}}
-  <div class="leftContainer" id="leftContainer">
-    <input type="image" src="set1button.png" id="set1Button">
-    <input type="image" src="set2button.png" id="set2Button">
-    <input type="image" src="set3button.png" id="set3Button">
-  </div>
+  <div id="nightModeButtonBackground"></div>
+  <input type="image" src="nightmodebutton.png" id="nightModeButton"
+         onclick="function() {
+    var b = document.body;
+    var nmb = document.getElementById('nightModeButton');
+    var hb = document.getElementById('heroBox');
+    nmb.addEventListener('click', function(e) {
+      if (b.style.backgroundColor === '#efefef') {
+        b.style.backgroundColor = '#555555';
+        hb.style.backgroundColor = '#cccccc';
+      } else {
+        b.style.backgroundColor = '#efefef';
+        hb.style.backgroundColor = '#ffffff';
+      }
+    });"
+  >
   
-  {{!-- center container --}}
-  <div class="centerContainer" id="centerContainer">
-    <input type="image" src="backbutton.png" id="backButton">
-{{!--    
-    <div id="heroBox">
-      <div id="heroCharacterBox">
-        <p>{{characters.currentSet.currentChar}}</p>
-      </div>
-      <div id="heroPronounceBox">
-        <p>{{characters.currentSet.currentPron}}</p>
-      </div>
-      <div id="heroMeaningBox">
-        <p>{{characters.currentSet.currentMean}}</p>
-      </div>
+  <div id="set1ButtonBackground"></div>
+  <input type="image" src="set1button.png" id="set1Button">
+  
+  <div id="set2ButtonBackground"></div>
+  <input type="image" src="set2button.png" id="set2Button">
+  
+  <div id="set3ButtonBackground"></div>
+  <input type="image" src="set3button.png" id="set3Button">
+
+  <div id="backButtonBackground"></div>
+  <input type="image" src="backbutton.png" id="backButton">
+
+  <div id="heroBox">
+    <div id="heroCharacterBox">
+{{!-- <p id="heroChar">{{characters.currentSet[currentChar]}}</p> --}}
+      <p id="heroChar">和</p>
     </div>
---}}
-    <input type="image" src="forwardbutton.png" id="forwardButton">
+    <div id="heroPronounceBox">
+{{!-- <p id="heroPron">{{characters.currentSet[currentPron]}}</p> --}}
+      <p id="heroPron">he2/he4</p>
+    </div>
+    <div id="heroMeaningBox">
+{{!-- <p id="heroMean">{{characters.currentSet[currentMean]}}</p> --}}
+      <p id="heroMean">peace, harmony, together with, mix, blend</p>
+    </div>
   </div>
 
-  {{!-- bottom container --}}
-  <div class="bottomContainer" id="bottomContainer">
-    <div class="characterHistory">
-      {{!-- TODO: character history here, need handlebars here --}}
-    </div>
-  </div>
-  
+  <div id="forwardButtonBackground"></div>
+  <input type="image" src="forwardbutton.png" id="forwardButton">
+
 </body>
-
+</html>

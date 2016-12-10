@@ -1,5 +1,22 @@
 // index.js: the client-side javascript for our ui
 
+window.addEventListener("DOMContentLoaded", function(e) {
+  var b = document.body;
+  var nmb = document.getElementById("nightModeButton");
+  var hb = document.getElementById("heroBox");
+  nmb.addEventListener("click", function(e) {
+    if (b.style.backgroundColor === "#efefef") {
+      b.style.backgroundColor = "#555555";
+      hb.style.backgroundColor = "#cccccc";
+    } else {
+      b.style.backgroundColor = "#efefef";
+      hb.style.backgroundColor = "#ffffff";
+    }
+  });
+});
+
+
+/*
 window.addEventListener("DOMContentLoaded", function(event) {
   var b = document.body;
   var fmb = document.getElementById("focusModeButton");
@@ -198,67 +215,6 @@ window.addEventListener("DOMContentLoaded", function(event) {
   });
   
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+*/
 
 

@@ -1,0 +1,247 @@
+/* stylesDesktop.css: 801px or higher width */
+
+body {
+  background-color: #efefef;      /* light gray background by default */
+}
+
+#chineseLogo {
+  position: fixed;
+  top: 0%;
+  left: 43%;
+  right: 57%;
+  bottom: 14%;
+  width: 14%;
+  height: 14%;
+}
+#chineseLogoBackground {
+  position: fixed;
+  top: 0%;
+  left: 41%;
+  right: 59%;
+  bottom: 16%;
+  width: 18%;
+  height: 16%;
+  background-color: #5f9ea0;
+}
+
+#focusModeButton {
+  position: fixed;
+  top: 0%;
+  left: 65%;
+  right: 75%;
+  bottom: 10%;
+  width: 10%;
+  height: 10%;
+}
+#focusModeButtonBackground {
+  position: fixed;
+  top: 0%;
+  left: 63%;
+  right: 77%;
+  bottom: 12%;
+  width: 14%;
+  height: 12%;
+  background-color: #5f9ea0;
+}
+
+#nightModeButton {
+  position: fixed;
+  top: 0%;
+  left: 85%;
+  right: 95%;
+  bottom: 10%;
+  width: 10%;
+  height: 10%;
+}
+#nightModeButtonBackground {
+  position: fixed;
+  top: 0%;
+  left: 83%;
+  right: 97%;
+  bottom: 12%;
+  width: 14%;
+  height: 12%;
+  background-color: #5f9ea0;
+}
+
+#set1Button {
+  position: fixed;
+  top: 20%;
+  left: 0%;
+  right: 10%;
+  bottom: 30%;
+  width: 10%;
+  height: 10%;
+  visibility: visible;
+}
+#set1ButtonBackground {
+  position: fixed;
+  top: 18%;
+  left: 0%;
+  right: 12%;
+  bottom: 32%;
+  width: 12%;
+  height: 14%;
+  background-color: #5f9ea0;
+  visibility: visible;
+}
+
+#set2Button {
+  position: fixed;
+  top: 45%;
+  left: 0%;
+  right: 10%;
+  bottom: 55%;
+  width: 10%;
+  height: 10%;
+  visibility: visible;
+}
+#set2ButtonBackground {
+  position: fixed;
+  top: 43%;
+  left: 0%;
+  right: 12%;
+  bottom: 57%;
+  width: 12%;
+  height: 14%;
+  background-color: #5f9ea0;
+  visibility: visible;
+}
+
+#set3Button {
+  position: fixed;
+  top: 70%;
+  left: 0%;
+  right: 10%;
+  bottom: 80%;
+  width: 10%;
+  height: 10%;
+  visibility: visible;
+}
+#set3ButtonBackground {
+  position: fixed;
+  top: 68%;
+  left: 0%;
+  right: 12%;
+  bottom: 82%;
+  width: 12%;
+  height: 14%;
+  background-color: #5f9ea0;
+  visibility: visible;
+}
+
+#backButton {
+  position: fixed;
+  top: 45%;
+  left: 15%;
+  right: 25%;
+  bottom: 55%;
+  width: 10%;
+  height: 10%;
+}
+#backButtonBackground {
+  position: fixed;
+  top: 43%;
+  left: 13%;
+  right: 27%;
+  bottom: 57%;
+  width: 14%;
+  height: 14%;
+  background-color: #5f9ea0;
+}
+
+#forwardButton {
+  position: fixed;
+  top: 45%;
+  left: 90%;
+  right: 100%;
+  bottom: 55%;
+  width: 10%;
+  height: 10%;
+}
+#forwardButtonBackground {
+  position: fixed;
+  top: 43%;
+  left: 88%;
+  right: 100%;
+  bottom: 57%;
+  width: 12%;
+  height: 14%;
+  background-color: #5f9ea0;
+}
+
+#heroBox {
+  position: fixed;
+  top: 20%;
+  left: 30%;
+  right: 85%;
+  bottom: 80%;
+  width: 55%;
+  height: 60%;
+  background-color: #ffffff;        /* white background by default */
+}
+
+#heroCharacterBox {
+  position: fixed;
+  top: 20%;
+  left: 40%;
+  right: 75%;
+  bottom: 55%;
+  width: 35%;
+  height: 35%;
+}
+#heroChar {
+  position: fixed;
+  top: 20%;
+  left: 40%;
+  right: 75%;
+  bottom: 55%;
+  width: 35%;
+  height: 35%;
+  font-size: 700%;
+  font-weight: bold;
+  text-align: center;
+}
+
+#heroPronounceBox {
+  position: fixed;
+  top: 55%;
+  left: 40%;
+  right: 75%;
+  bottom: 65%;
+  width: 35%;
+  height: 10%;
+}
+#heroPron {
+  position: fixed;
+  top: 55%;
+  left: 40%;
+  right: 75%;
+  bottom: 65%;
+  width: 35%;
+  height: 10%;
+  font-size: large;
+  text-align: center;
+}
+
+#heroMeaningBox {
+  position: fixed;
+  top: 65%;
+  left: 40%;
+  right: 75%;
+  bottom: 80%;
+  width: 35%;
+  height: 15%;
+}
+#heroMean {
+  position: fixed;
+  top: 65%;
+  left: 40%;
+  right: 75%;
+  bottom: 80%;
+  width: 35%;
+  height: 15%;
+  font-size: large;
+  text-align: center;
+}
+
